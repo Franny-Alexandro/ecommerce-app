@@ -178,7 +178,3 @@ src/
 3. Commit tus cambios
 4. Push a la rama
 5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT.
