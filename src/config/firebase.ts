@@ -7,14 +7,13 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCcMprAtvahDzoSrqprsfz8uNYfsnmLa-Q",
-  authDomain: "ecommerceapp-b1a2d.firebaseapp.com",
-  databaseURL: "https://ecommerceapp-b1a2d-default-rtdb.firebaseio.com",
-  projectId: "ecommerceapp-b1a2d",
-  storageBucket: "ecommerceapp-b1a2d.firebasestorage.app",
-  messagingSenderId: "559343171370",
-  appId: "1:559343171370:web:a198d0e61c8d1b3ca55053",
-  measurementId: "G-LV07W7X8EQ"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
